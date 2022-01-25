@@ -39,7 +39,7 @@ void ctrl_c_handler(int n, siginfo_t *info, void *unused)
 	}
 }
 
-/*customized interrupt handler function*/
+/*Customized interrupt handler function*/
 /*As testing is based on driver simulation it will display no irq vector available*/
 void sig_event_handler(int n, siginfo_t *info, void *unused)
 {
@@ -103,7 +103,7 @@ int main()
 		exit(1);
 	}
 	signal( SIGALRM, handle_alarm );
-	alarm( 5 ); /* read the tyre pressure values for every 5 seconds */
+	alarm( 5 ); /* Read the tyre pressure values for every 5 seconds */
 
 	for (;;) { 
 		if ( print_flag ) {
